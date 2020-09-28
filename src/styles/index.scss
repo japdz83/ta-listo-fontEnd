@@ -1,3 +1,97 @@
-/* 
-    General Styles
-*/
+/*=================================================================
+  Estilos Generales
+==================================================================*/
+.bg{
+    background-image: url('../img/bgLogin-Register.png');
+    width: 100%;
+    height: 1024px;
+    background-color: #fff;
+    background-attachment: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -10px;
+    // z-index: 99;
+}
+
+.navbar{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/*=================================================================
+  Estilos Formulario de Registro
+==================================================================*/
+.logo-register{
+    font-size: 80px;
+    color: #000;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.wrapper-form{
+    // position: absolute;
+    width: 500px;
+    height: auto;
+    // left: 469px;
+    margin: 0 auto;
+    top: 161px;
+    padding: 40px 30px;
+    background: #F8F8F8;
+    border-radius: 18px;
+}
+.form-group input{
+    // position: absolute;
+    width: 400px;
+    height: 50px;
+    left: 563px;
+    top: 412px;
+    background: #FFFFFF;
+    border: 0.7px solid rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.btn-register{
+    width: 400px !important;
+    padding: 10px;
+    margin-top: 10px;
+    background: #0099EF;
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+/*=================================================================
+  Estilos Footer
+==================================================================*/
+
+footer{
+    background-color: transparent !important;
+}
+.footer{
+    background-color: blue !important;
+    // opacity: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+.footer p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+.footer p a{
+    color: #FFFFFF;
+}
