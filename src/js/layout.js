@@ -4,12 +4,13 @@ import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
 import { Register } from "./views/register";
-import { Demo } from "./views/demo";
 // import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import { About } from "./views/about";
+import { Contact } from "./views/contact";
 
 //create your first component
 const Layout = () => {
@@ -26,8 +27,11 @@ const Layout = () => {
 						<Route exact path="/">
 							<Home />
 						</Route>
-						<Route exact path="/demo">
-							<Demo />
+						<Route exact path="/about">
+							<About />
+						</Route>
+						<Route exact path="/contact">
+							<Contact />
 						</Route>
 						<Route exact path="/register">
 							<Register />

@@ -17,7 +17,7 @@ export const Register = () => {
 	const handleChange = event => {
 		setRegister({
 			...register,
-			[event.target.nombre]: event.target.value
+			[event.target.name]: event.target.value
 		});
 		console.log(register);
 	};
