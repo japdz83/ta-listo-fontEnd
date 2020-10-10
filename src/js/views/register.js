@@ -11,7 +11,7 @@ export const Register = () => {
 		rubro: "",
 		email: "",
 		pass: "",
-		direccion: ""
+		adress: ""
 	});
 
 	const handleChange = event => {

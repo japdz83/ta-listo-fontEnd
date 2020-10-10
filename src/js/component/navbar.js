@@ -18,9 +18,12 @@ export const Navbar = () => {
 				<a className="nav-link">Contacto</a>
 			</Link>
 
-			<div className="ml-auto">
+			<div className="ml-auto row">
 				<Link to="/register">
 					<a className="nav-link">Registrarse</a>
+				</Link>
+				<Link to="/login">
+					<a className="nav-link">Inicio de Sesión</a>
 				</Link>
 			</div>
 		</nav>
