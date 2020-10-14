@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "../../styles/index.scss";
 import { Navbar } from "../component/navbar";
 
 export const Login = () => {
+	const history = useHistory();
 	const [login, setLogin] = useState({
 		email: "",
 		pass: ""
@@ -51,7 +52,13 @@ export const Login = () => {
 							</a>
 						</div>
 
-						<button type="submit" className="btn btn-primary btn-register">
+						<button
+							type="button"
+							onClick={e => {
+								actions.registerUser(register);
+								history.push("/about");
+							}}
+							className="btn btn-primary btn-register">
 							Registrar
 						</button>
 					</form>

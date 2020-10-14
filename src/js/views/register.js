@@ -1,9 +1,12 @@
 import React, { useState, useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "../../styles/index.scss";
 import { Navbar } from "../component/navbar";
+import { Context } from "../store/appContext";
 
 export const Register = () => {
+	const { store, actions } = useContext(Context);
+	const history = useHistory();
 	const [register, setRegister] = useState({
 		nombre: "",
 		rsocial: "",
@@ -101,7 +104,13 @@ export const Register = () => {
 							/>
 						</div>
 
-						<button type="submit" className="btn btn-primary btn-register">
+						<button
+							type="button"
+							onClick={e => {
+								actions.registerUser(register);
+								history.push("/login");
+							}}
+							className="btn btn-primary btn-register">
 							Registrar
 						</button>
 					</form>
