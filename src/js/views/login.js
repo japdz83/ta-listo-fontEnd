@@ -4,9 +4,11 @@ import { Link, useHistory } from "react-router-dom";
 import logo from "../../img/LOGO-ta-listo-blue.png";
 import "../../styles/index.scss";
 import { Navbar } from "../component/navbar";
+import { Context } from "../store/appContext";
 
 export const Login = () => {
-	// const history = useHistory();
+	const { store, actions } = useContext(Context);
+	const history = useHistory();
 	const [login, setLogin] = useState({
 		email: "",
 		pass: ""
@@ -55,11 +57,16 @@ export const Login = () => {
 								Olvido de contraseña
 							</a>
 						</div>
-						<Link to="/dashboard">
-							<button type="button" className="btn btn-primary btn-register">
-								Inicio de Sesión
-							</button>
-						</Link>
+
+						<button
+							type="button"
+							onClick={e => {
+								actions.loginUser(login);
+								history.push("/dashboard");
+							}}
+							className="btn btn-primary btn-register">
+							Registrar
+						</button>
 					</form>
 				</div>
 			</div>

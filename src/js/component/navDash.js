@@ -8,37 +8,6 @@ import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap
 import "../../styles/index.scss";
 
 export const NavDash = () => {
-    constructor(props) {
-        super(props);
-        this.state = {
-          isOpen: false,
-          dropdownOpen: false,
-          color: "transparent",
-        };
-        this.toggle = this.toggle.bind(this);
-        this.dropdownToggle = this.dropdownToggle.bind(this);
-        this.sidebarToggle = React.createRef();
-      }
-      toggle() {
-        if (this.state.isOpen) {
-          this.setState({
-            color: "transparent",
-          });
-        } else {
-          this.setState({
-            color: "dark",
-          });
-        }
-        this.setState({
-          isOpen: !this.state.isOpen,
-        });
-      }
-      dropdownToggle(e) {
-        this.setState({
-          dropdownOpen: !this.state.dropdownOpen,
-        });
-      }
-
 	return (
 		<nav className="navbar navbar-light bg-blue">
 			<Link to="/">
@@ -49,19 +18,11 @@ export const NavDash = () => {
 
 			<div className="ml-auto row">
 				<Link to="/login" className="dropdown">
-					<Dropdown nav isOpen={this.state.dropdownOpen} toggle={e => this.dropdownToggle(e)}>
-						<DropdownToggle caret nav>
-							<i className="nc-icon nc-bell-55" />
-							<p>
-								<span className="d-lg-none d-md-block">Some Actions</span>
-							</p>
-						</DropdownToggle>
-						<DropdownMenu right>
-							<DropdownItem tag="a">Action</DropdownItem>
-							<DropdownItem tag="a">Another Action</DropdownItem>
-							<DropdownItem tag="a">Something else here</DropdownItem>
-						</DropdownMenu>
-					</Dropdown>
+					<DropdownButton id="dropdown-basic-button" title={<img src={logoNav} />}>
+						<Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+						<Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+						<Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+					</DropdownButton>
 				</Link>
 			</div>
 		</nav>
