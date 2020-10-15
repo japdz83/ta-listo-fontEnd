@@ -12,7 +12,7 @@ export const Dashboard = () => {
 			<NavDash />
 			<div className="row">
 				<div className="col-sm-12 p-3">
-					<Tab.Container defaultActiveKey="profile">
+					<Tab.Container defaultActiveKey="home">
 						<Row>
 							<Col sm={2}>
 								<Nav variant="pills" className="flex-column">
@@ -32,35 +32,53 @@ export const Dashboard = () => {
 							<Col sm={10}>
 								<Tab.Content>
 									<Tab.Pane eventKey="home">
-										<h5>Status Ordens</h5>
+										<h5 className="mb-3 p-3">Status Ordens</h5>
 										<div className="wrapper-status">
-											<table className="table">
+											<table className="table p-3">
 												<thead>
 													<tr>
-														<th scope="col">#</th>
-														<th scope="col">First</th>
-														<th scope="col">Last</th>
-														<th scope="col">Handle</th>
+														<th scope="col">Orden de Trabajo</th>
+														<th scope="col">Nombre Cliente</th>
+														<th scope="col">Descripción</th>
+														<th scope="col">Status Orden</th>
 													</tr>
 												</thead>
 												<tbody>
 													<tr>
-														<th scope="row">1</th>
-														<td>Mark</td>
-														<td>Otto</td>
-														<td>@mdo</td>
+														<th scope="row">0001</th>
+														<td>Mark Rupertina</td>
+														<td>Tintorería</td>
+														<td>
+															<tr>
+																<button>En Proceso</button>
+																<button>Lista</button>
+																<button>Entregado</button>
+															</tr>
+														</td>
 													</tr>
 													<tr>
-														<th scope="row">2</th>
-														<td>Jacob</td>
-														<td>Thornton</td>
-														<td>@fat</td>
+														<th scope="row">0002</th>
+														<td>Ruben Duarte</td>
+														<td>Lavandería y Tintorería</td>
+														<td>
+															<tr>
+																<button>En Proceso</button>
+																<button>Lista</button>
+																<button>Entregado</button>
+															</tr>
+														</td>
 													</tr>
 													<tr>
-														<th scope="row">3</th>
-														<td>Larry</td>
-														<td>the Bird</td>
-														<td>@twitter</td>
+														<th scope="row">0003</th>
+														<td>Alí Primera</td>
+														<td>Lavandería</td>
+														<td>
+															<tr>
+																<button>En Proceso</button>
+																<button>Lista</button>
+																<button>Entregado</button>
+															</tr>
+														</td>
 													</tr>
 												</tbody>
 											</table>
@@ -68,14 +86,93 @@ export const Dashboard = () => {
 									</Tab.Pane>
 
 									<Tab.Pane eventKey="profile">
-										<h5>Profile Details</h5>
-										<p>
-											At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-											praesentium voluptatum deleniti atque corrupti quos dolores et quas
-											molestias excepturi sint occaecati cupiditate non provident, similique sunt
-											in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
-											fuga.
-										</p>
+										<h5 className="mb-3 p-3">Cargar una Orden</h5>
+										<div className="box-form-orden p-3">
+											<div className="container">
+												<div className="row">
+													<div className="col-md-4" />
+													<div className="col-md-8">
+														<form className="needs-validation">
+															<div className="form-row">
+																<div className="col-md-6 mb-3">
+																	<label>First name</label>
+																	<input
+																		type="text"
+																		className="form-control"
+																		id="validationTooltip01"
+																		value="Mark"
+																		required
+																	/>
+																	<div className="valid-tooltip">Looks good!</div>
+																</div>
+																<div className="col-md-6 mb-3">
+																	<label>Last name</label>
+																	<input
+																		type="text"
+																		className="form-control"
+																		id="validationTooltip02"
+																		value="Otto"
+																		required
+																	/>
+																	<div className="valid-tooltip">Looks good!</div>
+																</div>
+															</div>
+															<div className="form-row">
+																<div className="col-md-6 mb-3">
+																	<label>Email Cliente</label>
+																	<input
+																		type="email"
+																		className="form-control"
+																		id="validationTooltip03"
+																		required
+																		placeholder="Email"
+																	/>
+																	<div className="invalid-tooltip">
+																		Please provide a valid city.
+																	</div>
+																</div>
+
+																<div className="col-md-6 mb-3">
+																	<label>Teléfono</label>
+																	<input
+																		type="text"
+																		className="form-control"
+																		id="validationTooltip05"
+																		required
+																		placeholder="Teléfono"
+																	/>
+																	<div className="invalid-tooltip">
+																		Please provide a valid zip.
+																	</div>
+																</div>
+
+																<div className="col-md-6 mb-3">
+																	<label>Seleccione el tipo de Servicio</label>
+																	<select
+																		className="custom-select"
+																		id="validationTooltip04"
+																		required>
+																		<option selected disabled value="">
+																			Tipo Servicios
+																		</option>
+																		<option>Tintorería</option>
+																		<option>Lavandería</option>
+																		<option>Secado</option>
+																		<option>...</option>
+																	</select>
+																	<div className="invalid-tooltip">
+																		Please select a valid state.
+																	</div>
+																</div>
+															</div>
+															<button className="btn btn-primary" type="submit">
+																Crear Orden
+															</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
 									</Tab.Pane>
 
 									<Tab.Pane eventKey="contact">

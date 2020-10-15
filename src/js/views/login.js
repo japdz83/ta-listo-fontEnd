@@ -5,8 +5,10 @@ import logo from "../../img/LOGO-ta-listo-blue.png";
 import "../../styles/index.scss";
 import { Navbar } from "../component/navbar";
 import { Context } from "../store/appContext";
+// import { useLocation } from "wouter";
 
 export const Login = () => {
+	// const [, navigate] = useLocation();
 	const { store, actions } = useContext(Context);
 	const history = useHistory();
 	const [login, setLogin] = useState({
@@ -20,6 +22,8 @@ export const Login = () => {
 			[event.target.name]: event.target.value
 		});
 		console.log(login);
+
+		// navigate("./dashboard.js");
 	};
 
 	return (
@@ -65,7 +69,7 @@ export const Login = () => {
 								history.push("/dashboard");
 							}}
 							className="btn btn-primary btn-register">
-							Registrar
+							Iniciar Sesión
 						</button>
 					</form>
 				</div>

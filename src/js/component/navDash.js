@@ -10,20 +10,18 @@ import "../../styles/index.scss";
 export const NavDash = () => {
 	return (
 		<nav className="navbar navbar-light bg-blue">
-			<Link to="/">
+			<div className="Logo-dash">
 				<span className="navbar-brand mb-0">
 					<img src={logoNav} />
 				</span>
-			</Link>
+			</div>
 
 			<div className="ml-auto row">
-				<Link to="/login" className="dropdown">
-					<DropdownButton id="dropdown-basic-button" title={<img src={logoNav} />}>
-						<Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-						<Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-						<Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-					</DropdownButton>
-				</Link>
+				<DropdownButton id="dropdown-basic-button" title={<img src={userIcon} />}>
+					<Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+					<Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+					<Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+				</DropdownButton>
 			</div>
 		</nav>
 	);
