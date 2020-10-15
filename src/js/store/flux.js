@@ -1,7 +1,8 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			registeredUsers: []
+			registeredUsers: [],
+			loggedUsers: []
 		},
 		actions: {
 			startStore: currentLocal => {
@@ -22,6 +23,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const store = getStore();
 				setStore({
 					registeredUsers: [...store.registeredUsers, registerData]
+				});
+			},
+			loginUser: loginData => {
+				const store = getStore();
+				setStore({
+					loggedUsers: [...store.loggedUsers, loginData]
 				});
 			},
 			changeColor: (index, color) => {

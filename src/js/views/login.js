@@ -2,8 +2,10 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "../../styles/index.scss";
 import { Navbar } from "../component/navbar";
+import { Context } from "../store/appContext";
 
 export const Login = () => {
+	const { store, actions } = useContext(Context);
 	const history = useHistory();
 	const [login, setLogin] = useState({
 		email: "",
@@ -55,7 +57,7 @@ export const Login = () => {
 						<button
 							type="button"
 							onClick={e => {
-								actions.registerUser(register);
+								actions.loginUser(login);
 								history.push("/about");
 							}}
 							className="btn btn-primary btn-register">
