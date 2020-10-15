@@ -37,6 +37,22 @@ body{
     padding: 0px 5px;
 }
 
+.navbar a{
+    transition: all .1s ease-in; 
+    color: #0099EF;
+    font-weight: 600;
+    text-decoration: none;
+} 
+
+.navbar a:hover{
+    color: #024c77;;
+}
+
+/* ==================== NavBar DashBoard ==========================*/
+.bg-blue{
+    background-color: #0099EF !important;
+}
+
 /*=================================================================
   Estilos Home
 ==================================================================*/

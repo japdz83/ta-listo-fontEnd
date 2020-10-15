@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link, useHistory } from "react-router-dom";
+
+import logo from "../../img/LOGO-ta-listo-blue.png";
 import "../../styles/index.scss";
 import { Navbar } from "../component/navbar";
 import { Context } from "../store/appContext";
@@ -29,7 +31,9 @@ export const Register = () => {
 		<div className="bg">
 			<div className="container">
 				<div className="wrapper-form text-center mt-5">
-					<h2 className="logo-register">LOGO</h2>
+					<div className="text-center p-3 logo-home">
+						<img src={logo} />
+					</div>
 					<p className="text-center pt-3 pb-3"> Registrarse </p>
 					<form>
 						<div className="form-group col-md-6">

@@ -7,7 +7,7 @@ import team1 from "../../img/c-1.jpg";
 import team2 from "../../img/c-2.jpg";
 import team3 from "../../img/c-3.jpg";
 
-export const About = () => {
+export const HowDoes = () => {
 	return (
 		<div className="in-about">
 			<div className="bg-about">
@@ -15,12 +15,12 @@ export const About = () => {
 					<div className="row h-100 align-items-center">
 						<div className="col-12">
 							<div className="bradcumbContent">
-								<h2>Sobre Nosotros</h2>
+								<h2>Como Funciona</h2>
 								<nav aria-label="breadcrumb">
 									<ol className="breadcrumb">
 										<li className="breadcrumb-item">Home</li>
 										<li className="breadcrumb-item active" aria-current="page">
-											Lee Nuestra Historia
+											Asi Funciona
 										</li>
 									</ol>
 								</nav>
@@ -37,20 +37,20 @@ export const About = () => {
 							<div Name="mosh-about-us-content">
 								<div className="section-heading">
 									<p>Features</p>
-									<h2>What you get if you start your business with us</h2>
+									<h2>¿Qué es Ta’ Listo?</h2>
 								</div>
 								<p>
-									Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et
-									tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic
-									iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio ves tibul. Nec
-									odio vestibulum est mattis effic iturut magna. Pellente sque sita met tellus
-									blandit. Etiam nec odio. Etiam nec odio vestibulum est mattis effic iturut magna.
-									Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio
-									vestibulum est mat tis effic iturut magna.
+									Ta’ Listo es una rápida, sencilla y muy útil plataforma de consulta en tiempo real
+									para saber en qué estado se encuentra el pedido o servicio que solicitaste.
 								</p>
-								<a href="#" className="btn mosh-btn mt-50">
-									Read More
-								</a>
+								<p>
+									Con solo introducir el número de guía o factura asignado en el comercio que te está
+									prestando servicio obtienes de inmediato la información, evitando llamadas o visitas
+									innecesarias para conocer si tú pedido o servicio está listo. Además, gracias a esta
+									posibilidad de seguimiento y confirmación constantemente actualizada, puedes
+									planificar y organizar eficientemente rutas y rutinas a la hora de retirar tus
+									pedidos.
+								</p>
 							</div>
 						</div>
 

@@ -11,8 +11,8 @@ export const Navbar = () => {
 					<img src={logoNav} />
 				</span>
 			</Link>
-			<Link to="/about">
-				<a className="nav-link">Nosotros</a>
+			<Link to="/HowDoes">
+				<a className="nav-link">Como Funciona</a>
 			</Link>
 			<Link to="/contact">
 				<a className="nav-link">Contacto</a>

@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link, useHistory } from "react-router-dom";
+
+import logo from "../../img/LOGO-ta-listo-blue.png";
 import "../../styles/index.scss";
 import { Navbar } from "../component/navbar";
 
 export const Login = () => {
-	const history = useHistory();
+	// const history = useHistory();
 	const [login, setLogin] = useState({
 		email: "",
 		pass: ""
@@ -22,8 +24,10 @@ export const Login = () => {
 		<div className="bg">
 			<div className="container">
 				<div className="wrapper-form text-center mt-5">
-					<h2 className="logo-register">LOGO</h2>
-					<p className="text-center pt-3 pb-3"> Registrarse </p>
+					<div className="text-center p-3 logo-home">
+						<img src={logo} />
+					</div>
+					<p className="text-center pt-3 pb-3"> Iniciar Sesión </p>
 					<form>
 						<div className="form-group col-md-6">
 							<input
@@ -51,16 +55,11 @@ export const Login = () => {
 								Olvido de contraseña
 							</a>
 						</div>
-
-						<button
-							type="button"
-							onClick={e => {
-								actions.registerUser(register);
-								history.push("/about");
-							}}
-							className="btn btn-primary btn-register">
-							Registrar
-						</button>
+						<Link to="/dashboard">
+							<button type="button" className="btn btn-primary btn-register">
+								Inicio de Sesión
+							</button>
+						</Link>
 					</form>
 				</div>
 			</div>
