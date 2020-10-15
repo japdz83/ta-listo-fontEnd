@@ -11,7 +11,7 @@ export const Dashboard = () => {
 		<div>
 			<NavDash />
 			<div className="row">
-				<div className="col-sm-12 p-3">
+				<div className="col-sm-12 p-4">
 					<Tab.Container defaultActiveKey="home">
 						<Row>
 							<Col sm={2}>
@@ -22,10 +22,6 @@ export const Dashboard = () => {
 
 									<Nav.Item>
 										<Nav.Link eventKey="profile">Crear una Orden</Nav.Link>
-									</Nav.Item>
-
-									<Nav.Item>
-										<Nav.Link eventKey="contact">Clientes</Nav.Link>
 									</Nav.Item>
 								</Nav>
 							</Col>
@@ -90,28 +86,26 @@ export const Dashboard = () => {
 										<div className="box-form-orden p-3">
 											<div className="container">
 												<div className="row">
-													<div className="col-md-4" />
-													<div className="col-md-8">
+													<div className="col-md-10">
 														<form className="needs-validation">
 															<div className="form-row">
 																<div className="col-md-6 mb-3">
-																	<label>First name</label>
+																	<label>Nombre y Apellido</label>
 																	<input
 																		type="text"
 																		className="form-control"
 																		id="validationTooltip01"
-																		value="Mark"
 																		required
+																		placeholder="Nombre"
 																	/>
 																	<div className="valid-tooltip">Looks good!</div>
 																</div>
 																<div className="col-md-6 mb-3">
-																	<label>Last name</label>
+																	<label>N° de Orden</label>
 																	<input
 																		type="text"
 																		className="form-control"
 																		id="validationTooltip02"
-																		value="Otto"
 																		required
 																	/>
 																	<div className="valid-tooltip">Looks good!</div>
@@ -145,6 +139,19 @@ export const Dashboard = () => {
 																		Please provide a valid zip.
 																	</div>
 																</div>
+																<div className="col-md-12 mb-3">
+																	<label>Dirección Cliente</label>
+																	<input
+																		type="text"
+																		className="form-control"
+																		id="validationTooltip05"
+																		required
+																		placeholder="Dirección"
+																	/>
+																	<div className="invalid-tooltip">
+																		Please provide a valid zip.
+																	</div>
+																</div>
 
 																<div className="col-md-6 mb-3">
 																	<label>Seleccione el tipo de Servicio</label>
@@ -173,17 +180,6 @@ export const Dashboard = () => {
 												</div>
 											</div>
 										</div>
-									</Tab.Pane>
-
-									<Tab.Pane eventKey="contact">
-										<h5>Contact Info</h5>
-										<p>
-											At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-											praesentium voluptatum deleniti atque corrupti quos dolores et quas
-											molestias excepturi sint occaecati cupiditate non provident, similique sunt
-											in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
-											fuga.
-										</p>
 									</Tab.Pane>
 								</Tab.Content>
 							</Col>

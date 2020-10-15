@@ -3,9 +3,15 @@ import { Link } from "react-router-dom";
 import "../../styles/index.scss";
 import { Navbar } from "../component/navbar";
 import nosotrosHead from "../../img/headpiece.png";
-import team1 from "../../img/c-1.jpg";
-import team2 from "../../img/c-2.jpg";
-import team3 from "../../img/c-3.jpg";
+import ingreso from "../../img/ingresar-web.png";
+import buscar from "../../img/buscar-orden.png";
+import retira from "../../img/retirar-producto.png";
+import registro from "../../img/registrate.png";
+import orden from "../../img/registro-orden.png";
+import revisar from "../../img/revisar-info.png";
+import cambio1 from "../../img/cambio-status.png";
+import cambio2 from "../../img/cambio-status2.png";
+import aviso from "../../img/te-llamo.png";
 
 export const HowDoes = () => {
 	return (
@@ -68,12 +74,73 @@ export const HowDoes = () => {
 					<div className="row justify-content-center">
 						<div className="col-12 col-md-10">
 							<div className="section-heading text-center">
-								<p>Clients</p>
-								<h2>Meet Our Incredible Team</h2>
-								<h5 className="mt-30">
-									Est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio
-									vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna.{" "}
-								</h5>
+								<p>PARA EL USUARIO</p>
+								<h2>Consulta el estado del servicio</h2>
+								<h5 className="mt-30" />
+							</div>
+						</div>
+					</div>
+
+					<div className="row">
+						<div className=" text-center col-md-3">
+							<div className="team-thumbnail">
+								<img src={ingreso} />
+							</div>
+
+							<div className="team-meta-info">
+								<h4 />
+								<span> </span>
+								<p>1.- Visita www.talisto.com</p>
+							</div>
+						</div>
+
+						<div className=" text-center col-md-3">
+							<div className="team-thumbnail">
+								<img src={buscar} />
+							</div>
+
+							<div className="team-meta-info">
+								<h4 />
+								<span />
+								<p>2.- Ingresa el número de guía u orden de servicio asignado por el comercio.</p>
+							</div>
+						</div>
+
+						<div className=" text-center col-md-3">
+							<div className="team-thumbnail">
+								<img src={revisar} />
+							</div>
+
+							<div className="team-meta-info">
+								<h4 />
+								<span />
+								<p>3.- Revisa la información mostrada en pantalla.</p>
+							</div>
+						</div>
+
+						<div className=" text-center col-md-3">
+							<div className="team-thumbnail">
+								<img src={retira} />
+							</div>
+
+							<div className="team-meta-info">
+								<h4 />
+								<span />
+								<p>4.- Retira el producto en el establecimiento comercial.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<hr />
+			<section className="mosh-team-area section_padding_100">
+				<div className="container">
+					<div className="row justify-content-center">
+						<div className="col-12 col-md-10">
+							<div className="section-heading text-center">
+								<p>PARA EL COMERCIO</p>
+								<h2>Muestra al cliente final el status de su pedido u orden</h2>
+								<h5 className="mt-30" />
 							</div>
 						</div>
 					</div>
@@ -81,82 +148,74 @@ export const HowDoes = () => {
 					<div className="row">
 						<div className=" text-center col-md-4">
 							<div className="team-thumbnail">
-								<img src={team1} />
+								<img src={ingreso} />
 							</div>
 
 							<div className="team-meta-info">
-								<h4>Alí Pan Dulce</h4>
-								<span> Ahí </span>
-								<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque.</p>
-							</div>
-
-							<div className="team-social-info">
-								<a href="#">
-									<i className="fa fa-pinterest" aria-hidden="true" />
-								</a>
-								<a href="#">
-									<i className="fa fa-facebook" aria-hidden="true" />
-								</a>
-								<a href="#">
-									<i className="fa fa-twitter" aria-hidden="true" />
-								</a>
-								<a href="#">
-									<i className="fa fa-dribbble" aria-hidden="true" />
-								</a>
+								<h4 />
+								<span> </span>
+								<p>1.- Visita www.talisto.com</p>
 							</div>
 						</div>
 
 						<div className=" text-center col-md-4">
 							<div className="team-thumbnail">
-								<img src={team2} />
+								<img src={registro} />
 							</div>
 
 							<div className="team-meta-info">
-								<h4>Ruben Ruben</h4>
-								<span>digital designer</span>
-								<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque.</p>
-							</div>
-
-							<div className="team-social-info">
-								<a href="#">
-									<i className="fa fa-pinterest" aria-hidden="true" />
-								</a>
-								<a href="#">
-									<i className="fa fa-facebook" aria-hidden="true" />
-								</a>
-								<a href="#">
-									<i className="fa fa-twitter" aria-hidden="true" />
-								</a>
-								<a href="#">
-									<i className="fa fa-dribbble" aria-hidden="true" />
-								</a>
+								<h4 />
+								<span />
+								<p>2.- Regístrate en nuestra plataforma</p>
 							</div>
 						</div>
 
 						<div className=" text-center col-md-4">
 							<div className="team-thumbnail">
-								<img src={team3} />
+								<img src={orden} />
 							</div>
 
 							<div className="team-meta-info">
-								<h4>Johan Prado</h4>
-								<span>Developer</span>
-								<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque.</p>
+								<h4 />
+								<span />
+								<p>3.- Registra la orden de pedido de tus clientes.</p>
+							</div>
+						</div>
+					</div>
+					<div className="row">
+						<div className=" text-center col-md-4">
+							<div className="team-thumbnail">
+								<img src={cambio1} />
 							</div>
 
-							<div className="team-social-info">
-								<a href="#">
-									<i className="fa fa-pinterest" aria-hidden="true" />
-								</a>
-								<a href="#">
-									<i className="fa fa-facebook" aria-hidden="true" />
-								</a>
-								<a href="#">
-									<i className="fa fa-twitter" aria-hidden="true" />
-								</a>
-								<a href="#">
-									<i className="fa fa-dribbble" aria-hidden="true" />
-								</a>
+							<div className="team-meta-info">
+								<h4 />
+								<span />
+								<p>
+									4.- Elige el campo correspondiente al estado de la orden de pedido de tus clientes.
+								</p>
+							</div>
+						</div>
+						<div className=" text-center col-md-4">
+							<div className="team-thumbnail">
+								<img src={cambio2} />
+							</div>
+
+							<div className="team-meta-info">
+								<h4 />
+								<span />
+								<p>5.- Modifica el estado cuando estén listas las órdenes de pedido de tus clientes.</p>
+							</div>
+						</div>
+						<div className=" text-center col-md-4">
+							<div className="team-thumbnail">
+								<img src={aviso} />
+							</div>
+
+							<div className="team-meta-info">
+								<h4 />
+								<span />
+								<p>6.- Nosotros le avisamos a tus clientes que su pedido Ta’ listo.</p>
 							</div>
 						</div>
 					</div>
