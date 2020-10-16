@@ -35,11 +35,16 @@ export const Contact = () => {
 					<div className="row">
 						<div className="col-12 col-md-8">
 							<div className="contact-form-area">
-								<h2>Get in touch</h2>
+								<h2>Ponerse en contacto</h2>
 								<form action="#">
 									<div className="row">
 										<div className="col-12 col-md-6">
-											<input type="text" className="form-control" id="name" placeholder="Name" />
+											<input
+												type="text"
+												className="form-control"
+												id="name"
+												placeholder="Nombre"
+											/>
 										</div>
 										<div className="col-12 col-md-6">
 											<input
@@ -54,7 +59,7 @@ export const Contact = () => {
 												type="text"
 												className="form-control"
 												id="subject"
-												placeholder="Subject"
+												placeholder="Asunto"
 											/>
 										</div>
 										<div className="col-12">
@@ -64,11 +69,11 @@ export const Contact = () => {
 												id="message"
 												cols="30"
 												rows="10"
-												placeholder="Message"
+												placeholder="Mensaje"
 											/>
 										</div>
-										<button className="btn mosh-btn mt-50" type="submit">
-											Send Message
+										<button className="btn btn-primary mosh-btn btn-contact mt-50" type="submit">
+											Enviar
 										</button>
 									</div>
 								</form>
@@ -77,7 +82,7 @@ export const Contact = () => {
 
 						<div className="col-12 col-md-4">
 							<div className="contact-information">
-								<h2>Contact</h2>
+								<h2>Datos de Contacto</h2>
 								<div className="single-contact-info d-flex">
 									<div className="contact-icon mr-15">
 										<img src="img/core-img/map.png" alt="" />
@@ -94,7 +99,7 @@ export const Contact = () => {
 									<div className="contact-icon mr-15">
 										<img src="img/core-img/message.png" alt="" />
 									</div>
-									<p>office@yourbusiness.com</p>
+									<p>info@talisto.com</p>
 								</div>
 								<div className="contact-social-info mt-50">
 									<a href="#">

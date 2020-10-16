@@ -31,7 +31,7 @@ export const Register = () => {
 		<div className="bg">
 			<div className="container">
 				<div className="wrapper-form text-center mt-5">
-					<div className="text-center p-3 logo-home">
+					<div className="text-center p-3 logo-form">
 						<img src={logo} />
 					</div>
 					<p className="text-center pt-3 pb-3"> Registrarse </p>

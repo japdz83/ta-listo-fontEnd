@@ -14,6 +14,7 @@ import { Footer } from "./component/footer";
 import { HowDoes } from "./views/como-funciona";
 import { Contact } from "./views/contact";
 import { Dashboard } from "./views/dashboard";
+import { Resultado } from "./views/resultado";
 
 //create your first component
 const Layout = () => {
@@ -44,6 +45,9 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/dashboard">
 							<Dashboard />
+						</Route>
+						<Route exact path="/resultado">
+							<Resultado />
 						</Route>
 						<Route>
 							<h1>Not found!</h1>

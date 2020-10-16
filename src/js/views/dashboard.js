@@ -46,21 +46,29 @@ export const Dashboard = () => {
 														<td>Tintorería</td>
 														<td>
 															<tr>
-																<button>En Proceso</button>
-																<button>Lista</button>
-																<button>Entregado</button>
+																<button className="btn btn-primary m-1">
+																	En Proceso
+																</button>
+																<button className="btn btn-secondary m-1">Lista</button>
+																<button className="btn btn-secondary m-1">
+																	Entregado
+																</button>
 															</tr>
 														</td>
 													</tr>
 													<tr>
 														<th scope="row">0002</th>
-														<td>Ruben Duarte</td>
+														<td>Carmen Aguilar</td>
 														<td>Lavandería y Tintorería</td>
 														<td>
 															<tr>
-																<button>En Proceso</button>
-																<button>Lista</button>
-																<button>Entregado</button>
+																<button className="btn btn-secondary m-1">
+																	En Proceso
+																</button>
+																<button className="btn btn-warning m-1">Lista</button>
+																<button className="btn btn-secondary m-1">
+																	Entregado
+																</button>
 															</tr>
 														</td>
 													</tr>
@@ -70,9 +78,126 @@ export const Dashboard = () => {
 														<td>Lavandería</td>
 														<td>
 															<tr>
-																<button>En Proceso</button>
-																<button>Lista</button>
-																<button>Entregado</button>
+																<button className="btn btn-secondary m-1">
+																	En Proceso
+																</button>
+																<button className="btn btn-secondary m-1">Lista</button>
+																<button className="btn btn-success m-1">
+																	Entregado
+																</button>
+															</tr>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">0004</th>
+														<td>Ramón Valdes</td>
+														<td>Tintorería</td>
+														<td>
+															<tr>
+																<button className="btn btn-secondary m-1">
+																	En Proceso
+																</button>
+																<button className="btn btn-secondary m-1">Lista</button>
+																<button className="btn btn-success m-1">
+																	Entregado
+																</button>
+															</tr>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">0005</th>
+														<td>Roberto Herrera</td>
+														<td>Secado</td>
+														<td>
+															<tr>
+																<button className="btn btn-secondary m-1">
+																	En Proceso
+																</button>
+																<button className="btn btn-secondary m-1">Lista</button>
+																<button className="btn btn-success m-1">
+																	Entregado
+																</button>
+															</tr>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">0006</th>
+														<td>Ana Azuaje</td>
+														<td>Lavandería</td>
+														<td>
+															<tr>
+																<button className="btn btn-primary m-1">
+																	En Proceso
+																</button>
+																<button className="btn btn-secondary m-1">Lista</button>
+																<button className="btn btn-secondary m-1">
+																	Entregado
+																</button>
+															</tr>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">0007</th>
+														<td>Ruth Campos</td>
+														<td>Secado</td>
+														<td>
+															<tr>
+																<button className="btn btn-secondary m-1">
+																	En Proceso
+																</button>
+																<button className="btn btn-secondary m-1">Lista</button>
+																<button className="btn btn-success m-1">
+																	Entregado
+																</button>
+															</tr>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">0008</th>
+														<td>Daniel Martinez</td>
+														<td>Lavandería</td>
+														<td>
+															<tr>
+																<button className="btn btn-secondary m-1">
+																	En Proceso
+																</button>
+																<button className="btn btn-secondary m-1">Lista</button>
+																<button className="btn btn-success m-1">
+																	Entregado
+																</button>
+															</tr>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">0009</th>
+														<td>Marcos Rubios</td>
+														<td>Tintorería</td>
+														<td>
+															<tr>
+																<button className="btn btn-secondary m-1">
+																	En Proceso
+																</button>
+																<button className="btn btn-secondary m-1">Lista</button>
+																<button className="btn btn-success m-1">
+																	Entregado
+																</button>
+															</tr>
+														</td>
+													</tr>
+
+													<tr>
+														<th scope="row">0010</th>
+														<td>Danilo Fernandez</td>
+														<td>Lavandería</td>
+														<td>
+															<tr>
+																<button className="btn btn-primary m-1">
+																	En Proceso
+																</button>
+																<button className="btn btn-secondary m-1">Lista</button>
+																<button className="btn btn-secondary m-1">
+																	Entregado
+																</button>
 															</tr>
 														</td>
 													</tr>
